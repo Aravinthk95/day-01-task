@@ -1,0 +1,98 @@
+OBJECTS AND ITS INTERNAL REPRESENTATION IN JAVASCRIPT
+
+     In simple terms.  A javascript object is a collection of named values having state and behavior (properties and method).
+     For example: Person, car, pen, bike, personal computer, washing machine etc.
+Let takes the case of car. 
+
+     All cars have the same properties, but the property values differ from car to car.  All cars have the same methods, but the methods are performed at different times.
+Let’s have an example of my favorite merc car and list out out its properties(Features):
+
+MAKE: mercedes 
+MODEL: c-class
+COLOR: white
+FUEL: diesel
+WEIGHT: 850kg
+MILEAGE: 8kmpl
+RATING: 4.5
+
+Taking the above as reference, I’ll stress up on objects ,objects properties and methods.
+
+ 1)OBJECTS:
+     The following code assigns a SIMPLE VALUE (MERCEDES) to a VARIABLE named car:
+Var car = “merecedes”;
+
+Objects are variables too. But objects can contain many values. 
+
+The following code assigns many values (MERCEDES, C-CLASS, white and soo on ) to a variable named car;
+
+Var car = {make: “mercedes”, Model: “C-Class”, color: “white”,  Fuel: “diesel”, Weight: “850kg”, mileage: “8kmpl”, rating: 4.5};
+
+The values are written as name:value pairs (name and value separated by a colon).
+
+SYNTAX:
+      Var <object-name> = {key1: value1, key2: value2, keyn: valuen};
+
+
+
+2)OBJECT PROPERTIES
+
+     The name : values [aors (in javascript objects ) are called properties.
+
+Var car = { Make : “mercedes”, model : “c-class”, color: “white”, fuel: “diesel”, weight: “850kg”, mileage: “8kmpl”, rating: 4.5};
+
+
+From the above snoppet, lets have a look what falls under property and property value:
+
+
+          Property                                     property value
+
+         Make                                                       mercedes
+         Model                                                      c-class
+          Color                                                      white
+          Fuel                                                        diesel
+          Weight                                                    850kg
+          Mileage                                                    8kmpl
+          Rating                                                       4.5
+
+The object properties can be different primitive values, other objects and functions.
+
+Properties can usually be changed added and deleted, but some are read only.
+
+THE SYNTAX FOR ADDING A PROPERTY TO AN OBJECT IS:
+
+ObjectName.objectproperty = propertyValue;
+
+THE SYNTAX FOR DELETING A PROPERTY FROM AN OBJECT IS:
+
+Delete objectName.objectproperty;
+
+
+THE SYNTAX TO ACCESS A PROPERTY ROM AN OBJECT IS:
+
+objectName.property       //car.make
+          //or
+objectName[“property”]     //car[“make”]
+
+
+         //or
+
+objectName[expression]     //x= “Make” ; Car[x]
+
+
+
+                                                                                                                                              
+3) OBJECT METHODS
+
+     An object method is an object property containing a function definition.
+
+Lets assume to  start the car there will be a mechanical functionality.
+
+  Function( ){return ignition.on}
+  
+And so similar is to stop/brake/headlights ON & OFF etc.
+
+(Im just trying to roll a picture in your mind. The car will not start / stop by means of code.  I assume you’d get it).
+
+You can also look into many examples & operations here.
+So, conclusion and simple definition for java script object methods is “Methids are actions that can be performed on objects”.
+

@@ -1,0 +1,41 @@
+HYPER TEXT TRANSFER PROTOCOL (HTTP)
+
+ABSTRACT OF HTTP:
+      HTTP is a application layer protocol.  Initially HTTP 0.9 is introduced in 1991 by CERN:IEFT:W3C and its initiated by TIM BERNERS-LEE at CERN in 1989.
+
+Difference between HTTP1.0 & HTTP2.0
+     
+     HTTP1.0
+1.	HTTP 1.0 is introduced in 1996
+2.	It has a major issues in HEAD OF LINE BLOCKING
+In this the TCP connection is blocked by the preceding request till the server response to it.
+
+Ex:
+     If we give the request as a lion it sends to the server and verified it and send the content of your request after that only the server knows if we load the content we need the background images for this content.
+
+     To mitigate this issue we use multiplexing connection in linings as valconising and spriting.
+
+     After the introduction of multiplexing since HTTP1.0 is stateless the same stackage issues of HTTP1.0 parameters arises again & again it faces another issue REDUNDANCY IN REQUEST HEADER.
+
+
+ 
+
+
+
+HTTP2.0:
+
+1.	It is introduced in 2015.  In this the blocking is totally reduced it is achieved by using same TCP connection efficiently for all the request with the help of multiplexing.
+2.	HTTP2.0 allows to compress the HTTP HEADERS using compression format called H PACK.
+3.	In  HTTP2.0 push is one of the important feature it allows to response the request and during the time of request it will be fetch from cache itself directly.
+
+  
+
+HTTP 2.0 SUPPORTING BROWSERS:
+
+1.	EDGE
+2.	FIREFOX
+3.	CHROME
+4.	OPERA
+5.	SAFARI.  Etc…
+
+ 
